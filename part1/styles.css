@@ -1,0 +1,21 @@
+passports {
+  display: block;
+  background-color: #f0f0f0;
+  padding: 20px;
+}
+
+passport {
+  display: block;
+    background-color: #af9463;
+    border: 2px solid #bb602b;
+    padding: 15px;
+    width: 300px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+}
+
+firstName, lastName, middleName, address, idNumber, photo {
+  display: block;
+    font-size: 16px;
+    margin: 5px 0;
+}
