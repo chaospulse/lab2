@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE passports SYSTEM "passports.dtd">
+<?xml-stylesheet type="text/xsl" href="stylesheet.xsl"?>
+
+<passports>
+  <passport>
+    <firstName>Іван</firstName>
+    <lastName>Петренко</lastName>
+    <middleName>Миколайович</middleName>
+    <address>вул. Шевченка, 10, Київ, Україна</address>
+    <idNumber>1234567890</idNumber>
+  </passport>
+  <passport>
+    <firstName>Марія</firstName>
+    <lastName>Коваленко</lastName>
+    <middleName>Олександрівна</middleName>
+    <address>просп. Перемоги, 15, Львів, Україна</address>
+    <idNumber>0987654321</idNumber>
+  </passport>
+</passports>

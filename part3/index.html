@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>XML + XSLT</title>
+</head>
+<body>
+    <div id="output"></div>
+    <script>
+        async function loadXML(url) {
+            const response = await fetch(url);
+            console.log(response);
+            return new window.DOMParser().parseFromString(await response.text(), "text/xml");
+        }
+
+        async function transformXML() {
+            const xml = await loadXML("index.xml");
+            const xslt = await loadXML("transform.xsl");
+            console.log(xslt);
+
+            const xsltProcessor = new XSLTProcessor();
+            xsltProcessor.importStylesheet(xslt);
+            
+            const resultDocument = xsltProcessor.transformToFragment(xml, document);
+            document.getElementById("output").appendChild(resultDocument);
+        }
+
+        transformXML();
+    </script>
+</body>
+</html>

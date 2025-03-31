@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE passports [
+  <!ELEMENT passports (passport*)>
+<!ELEMENT passport (firstName, lastName, middleName, address, idNumber, photo)>
+<!ELEMENT firstName (#PCDATA)>
+<!ELEMENT lastName (#PCDATA)>
+<!ELEMENT middleName (#PCDATA)>
+<!ELEMENT address (#PCDATA)>
+<!ELEMENT idNumber (#PCDATA)>
+]>
